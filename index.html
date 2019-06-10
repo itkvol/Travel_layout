@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>page layout</title>
+
+  <!-- Include Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Include Datepicker -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+  <script src="dist/js/datepicker.min.js"></script>
+
+  <!-- Include English language for Datepicker -->
+  <script src="dist/js/i18n/datepicker.en.js"></script>
+
+  <!-- Include Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+
+  <!-- Slick styles for carousel -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+
+  <!-- Link to CSS styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Header (Top) section here -->
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-white">
+        <a href="#" class="navbar-brand">
+          <img src="./img/logo.svg" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-white">&#9776;</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Following Page 1</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Following Page 2
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Orders</a>
+                <a class="dropdown-item" href="#">Prices</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Page</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="row">
+        <h1 class="text-center">Make your trip perfect</h1>
+        <div class="form-wrapper col-sm-12 col-xl-9">
+          <!-- Form for tour search -->
+          <form>
+            <div class="row">
+              <div class="direction col-sm-12 col-md-6 col-xl-7">
+                <img src="./img/map-marker.png" alt="map">
+                <input type="text" placeholder="Where are you going?">
+              </div>
+              <div class="date-pick col-sm-12 col-md-6 col-xl-5">
+                <img src="./img/small-calendar.png" alt="calendar">
+                <input class="datepicker-here" type="text" data-language='en' data-range="true"
+                  data-multiple-dates-separator=" - " placeholder="Check in - Check out">
+              </div>
+              <div class="vacationers col-sm-12 col-md-5">
+                <img src="./img/profile.png" alt="profile">
+                <select>
+                  <option value="" disabled selected>Adults</option>
+                  <option value="1">1 Adult</option>
+                  <option value="2">2 Adults</option>
+                </select>
+                <select>
+                  <option value="" disabled selected>Children</option>
+                  <option value="0">0 Children</option>
+                  <option value="1">1 Child</option>
+                  <option value="2">2 Children</option>
+                </select>
+              </div>
+              <div class="rooms col-sm-12 col-md-4">
+                <img src="./img/bed.png" alt="bed">
+                <select>
+                  <option value="" disabled selected>Rooms</option>
+                  <option value="1">1 Room</option>
+                  <option value="2">2 Rooms</option>
+                </select>
+              </div>
+              <div class="send col-md-3">
+                <button>Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section with tour slides carousel slick -->
+  <section id="best-sellers">
+    <div class="sellers-background"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="left-search col-sm-12 col-lg-3">
+          <h2>Our best sellers</h2>
+          <p>Error oportere definiebas quo an, sit hinc labores adipiscing et, quas oporteat antiopam vis cu.</p>
+          <div class="left-search-input">
+            <img src="./img/search.png" alt="search">
+            <input type="text" placeholder="Search tour">
+          </div>
+        </div>
+        <div class="carousel-arrows-wrapper">
+          <div class="carousel-arrows">
+
+          </div>
+        </div>
+
+        <div class="carousel-multiple autoplay col-sm-12 col-lg-9">
+          <div>
+
+            <article>
+              <img src="./img/card1.jpg" alt="card1">
+              <div class="card-info">
+                <div>
+                  <p>Regione luptatum</p>
+                  <p>argumentum</p>
+                </div>
+                <div>
+                  <img src="./img/sun.png" alt="sun">
+                  <span>30&#176;</span>
+                </div>
+                <div>
+                  <img src="./img/plane.png" alt="plane">
+                  <span>5h</span>
+                </div>
+              </div>
+              <div class="card-price">
+                <p><span>&#8212</span> 2000</p>
+                <button>Order this tour</button>
+              </div>
+            </article>
+          </div>
+          <div>
+
+            <article>
+              <img src="./img/card2.jpg" alt="card2">
+              <div class="card-info">
+                <div>
+                  <p>Regione luptatum</p>
+                  <p>argumentum</p>
+                </div>
+                <div>
+                  <img src="./img/sun.png" alt="sun">
+                  <span>30&#176;</span>
+                </div>
+                <div>
+                  <img src="./img/plane.png" alt="plane">
+                  <span>5h</span>
+                </div>
+              </div>
+              <div class="card-price">
+                <p><span>&#8212</span> 2000</p>
+                <button>Order this tour</button>
+              </div>
+            </article>
+          </div>
+          <div>
+
+            <article>
+              <img src="./img/card3.jpg" alt="card3">
+              <div class="card-info">
+                <div>
+                  <p>Regione luptatum</p>
+                  <p>argumentum</p>
+                </div>
+                <div>
+                  <img src="./img/sun.png" alt="sun">
+                  <span>30&#176;</span>
+                </div>
+                <div>
+                  <img src="./img/plane.png" alt="plane">
+                  <span>5h</span>
+
+                </div>
+              </div>
+              <div class="card-price">
+                <p><span>&#8212</span> 2000</p>
+                <button>Order this tour</button>
+              </div>
+            </article>
+          </div>
+          <div>
+
+            <article>
+              <img src="./img/card4.jpg" alt="card4">
+              <div class="card-info">
+                <div>
+                  <p>Regione luptatum</p>
+                  <p>argumentum</p>
+                </div>
+                <div>
+                  <img src="./img/sun.png" alt="sun">
+                  <span>30&#176;</span>
+                </div>
+                <div>
+                  <img src="./img/plane.png" alt="plane">
+                  <span>5h</span>
+                </div>
+              </div>
+              <div class="card-price">
+                <p><span>&#8212</span> 2000</p>
+                <button>Order this tour</button>
+              </div>
+            </article>
+          </div>
+          <div>
+
+            <article>
+              <img src="./img/card1.jpg" alt="card1">
+              <div class="card-info">
+                <div>
+                  <p>Regione luptatum</p>
+                  <p>argumentum</p>
+                </div>
+                <div>
+                  <img src="./img/sun.png" alt="sun">
+                  <span>30&#176;</span>
+                </div>
+                <div>
+                  <img src="./img/plane.png" alt="plane">
+                  <span>5h</span>
+                </div>
+              </div>
+              <div class="card-price">
+                <p><span>&#8212</span> 2000</p>
+                <button>Order this tour</button>
+              </div>
+            </article>
+          </div>
+          <div>
+
+            <article>
+              <img src="./img/card4.jpg" alt="card4">
+              <div class="card-info">
+                <div>
+                  <p>Regione luptatum</p>
+                  <p>argumentum</p>
+                </div>
+                <div>
+                  <img src="./img/sun.png" alt="sun">
+                  <span>30&#176;</span>
+                </div>
+                <div>
+                  <img src="./img/plane.png" alt="plane">
+                  <span>5h</span>
+                </div>
+              </div>
+              <div class="card-price">
+                <p><span>&#8212</span> 2000</p>
+                <button>Order this tour</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video banner -->
+  <section id="video-demo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 video-container">
+          <video width="100%" height="100%" controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+              type="video/mp4">
+          </video>
+
+          <div class="poster">
+            <img src="./img/video-poster.jpg" alt="poster">
+
+            <i class="fas fa-play-circle"></i>
+
+
+          </div>
+
+
+        </div>
+        <div class="col-md-3 right-side-info">
+          <h2>Homero patrioque</h2>
+          <p>Eum id regione luptatum argumentum, corpora principes cum ea. Ex pro liber assueverit, unum summo
+            interpretaris mea at. Sed et homero patrioque, primis apeirian te sit. </p>
+          <button>Search the tour</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Tours adverts -->
+  <section id="banner">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-md-4 first">
+          <h3>Cruises</h3>
+          <button class="btn btn-outline-light">Details</button>
+        </div>
+        <div class="col-md-4 second">
+          <h3>All inclive</h3>
+          <button class="btn btn-outline-light">Details</button>
+        </div>
+        <div class="col-md-4 third">
+          <h3>Camping</h3>
+          <button class="btn btn-outline-light">Details</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Hot tours section -->
+  <section id="hot-tours">
+    <div class="container">
+      <h2>Hot tours</h2>
+
+      <!-- Slick slider -->
+      <div class="hot-tours-carousel carousel-multiple">
+        <div>
+          <div class="card">
+            <img src="./img/hot-tours-1.jpg" class="card-img-top" alt="hot-tours-1">
+            <div class="card-body">
+              <span>384</span>
+              <p class="card-title">Autem appellantur</p>
+              <ul class="card-text">
+                <li>Eum id regione luptatum quaeque delenit</li>
+                <li>Сorpora principes cum ea</li>
+                <li>Ex pro liber assueverit minim oratio</li>
+              </ul>
+              <a href="#">More info</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <img src="./img/hot-tours-2.jpg" class="card-img-top" alt="hot-tours-2">
+            <div class="card-body">
+              <span>384</span>
+              <p class="card-title">Autem appellantur</p>
+              <ul class="card-text">
+                <li>Eum id regione luptatum quaeque delenit</li>
+                <li>Сorpora principes cum ea</li>
+                <li>Ex pro liber assueverit minim oratio</li>
+              </ul>
+              <a href="#">More info</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <img src="./img/hot-tours-3.jpg" class="card-img-top" alt="hot-tours-3">
+            <div class="card-body">
+              <span>384</span>
+              <p class="card-title">Autem appellantur</p>
+              <ul class="card-text">
+                <li>Eum id regione luptatum quaeque delenit</li>
+                <li>Сorpora principes cum ea</li>
+                <li>Ex pro liber assueverit minim oratio</li>
+              </ul>
+              <a href="#">More info</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <img src="./img/hot-tours-1.jpg" class="card-img-top" alt="hot-tours-1">
+            <div class="card-body">
+              <span>384</span>
+              <p class="card-title">Autem appellantur</p>
+              <ul class="card-text">
+                <li>Eum id regione luptatum quaeque delenit</li>
+                <li>Сorpora principes cum ea</li>
+                <li>Ex pro liber assueverit minim oratio</li>
+              </ul>
+              <a href="#">More info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Worldwide search -->
+  <section id="any-place">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-8 any-place-map">
+          <img src="./img/world_map.png" alt="map">
+        </div>
+        <div class="col-sm-12 col-lg-4 any-place-right-side">
+          <h2>Any place in the world</h2>
+          <div>
+            <p>Lorem ipsum dolor sit amet, eos ne definiebas mediocritatem, ut suas delenit mandamus sea. Integre
+              ancillae philosophia per et, primis omnesque noluisse cum no, est rebum augue aliquip ea. Ex mel altera
+              equidem, amet sumo lucilius no eum. Semper qualisque in qui. </p>
+            <button>Search the flight</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with navs and contact information -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 footer-nav">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#">Home Page</a><br>
+              <a href="#">Our Team</a> <br>
+              <a href="#">Following Page 1</a>
+            </div>
+            <div class="col-md-6">
+              <a href="#">Following Page 2</a> <br>
+              <a href="#">Contact Page</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 footer-contact">
+          <div class="row">
+            <div class="col-md-6">
+              Infofactory AG <br>
+              Badstrasse 50 <br>
+              5200 Brugg
+            </div>
+            <div class="col-md-6">
+              +41 58 200 66 00 <br>
+              Info@infofactory.ch
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 footer-logo">
+          <img src="./img/logo.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="footer-up">
+      <a href="#"><img src="./img/up-arrow.png" alt="up"></a>
+
+    </div>
+  </footer>
+
+
+  <!-- Font awesome for icons -->
+  <script src="https://kit.fontawesome.com/be2c62471c.js"></script>
+  <!-- External javascript code -->
+  <script src="./js/script.js"></script>
+  <!-- Bootstrap js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- Slick for carousel -->
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
+</html>
